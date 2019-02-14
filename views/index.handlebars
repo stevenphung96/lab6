@@ -20,6 +20,8 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
 </head>
 
 <body>
@@ -31,6 +33,9 @@
 			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
 			<p class="facebookLogin">Please login through Facebook</p>
 		</div>
+
+		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+		</fb:login-button>
 
 		<div id="facebookPhoto" class="profile">
 			<h3>Profile Photo</h3>
